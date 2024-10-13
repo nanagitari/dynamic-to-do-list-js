@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create a new list element and set its textContent to taskText
         const li = document.createElement('li');
         li.textContent = taskText;
+        li.className= classList.add;
 
         // Creates a new button element for removing the task
         const removeButton = document.createElement('button');
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Attach event listeners
     addButton.addEventListener('click', addTask);
 
-    addButton.className='classlist.add';
+    
 
     // Add 'keypress' event listener to the task input field to allow adding tasks by pressing "Enter"
     taskInput.addEventListener('keypress', function(event) {

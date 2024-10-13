@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // added an addTask function
     function addTask() {
         // helps in retrieving and trimming the value from the task input field
-        const taskText = taskInput.value.trim();
+        const taskText = taskInput.value.trim("classList.add");
 
         // Checks if the taskText is not empty
         if (taskText === "") {
